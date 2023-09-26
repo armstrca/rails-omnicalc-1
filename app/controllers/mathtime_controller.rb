@@ -15,13 +15,13 @@ class MathtimeController < ApplicationController
   end
 
   def square_root
-    render({ :template => "layouts/sqrt" })
+    render({ :template => "layouts/square_root" })
   end
 
   def square_root_results
     @number = params.fetch("number")
     @num_sqrt = (@number.to_f)**0.5
-    render({ :template => "layouts/sqrt_results" })
+    render({ :template => "layouts/square_root_results" })
   end
 
   def payment
